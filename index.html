@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <title>陰盤奇門排盤小工具</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>陰盤奇門排盤小工具</h2>
+    <label>年：</label><input id="year" type="number"><br>
+    <label>月：</label><input id="month" type="number"><br>
+    <label>日：</label><input id="day" type="number"><br>
+    <label>時：</label><input id="hour" type="number"><br>
+    <button onclick="generate()">排盤</button>
+    <div class="result" id="result"></div>
+    <script>
+        function generate() {
+            // 這裡放你的排盤邏輯
+            const year = document.getElementById('year').value;
+            const month = document.getElementById('month').value;
+            const day = document.getElementById('day').value;
+            const hour = document.getElementById('hour').value;
+            // 假設這裡只是示範
+            document.getElementById('result').innerText = `排盤結果：${year}年${month}月${day}日${hour}時`;
+        }
+    </script>
+</body>
+
+</html>
